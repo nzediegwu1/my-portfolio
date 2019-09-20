@@ -968,3 +968,10 @@ blockquote {
 .profile-div {
   object-fit: contain;
 }
+.stack-img {
+  justify-content: center;
+  margin: auto;
+}
+.stack-img img {
+  max-width: 10em;
+}
