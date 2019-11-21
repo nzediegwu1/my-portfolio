@@ -965,6 +965,15 @@ blockquote {
   }
 }
 
+@media (max-width: 768px) {
+  .about .row {
+    display: block;
+  }
+  .about .col-sm-6 {
+    max-width: 100%;
+  }
+}
+
 .profile-div {
   object-fit: contain;
 }
@@ -974,4 +983,46 @@ blockquote {
 }
 .stack-img img {
   max-width: 10em;
+}
+
+img.company-logo {
+  width: 10em;
+}
+.parkway-logo {
+  width: 13em;
+}
+
+.django {
+  height: 6em;
+}
+
+.tool-icon {
+  height: 10em;
+}
+
+.testimonial-img {
+  height: 10em;
+}
+.testimonal-user {
+  color: white;
+}
+.testimonal-user:hover {
+  color: white;
+}
+.portfolio {
+  padding-bottom: 1.5em;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  visibility: visible;
+  will-change: transform;
+  opacity: 1;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: transform, opacity;
+}
+
+.font-secondary{
+  font-family: cursive;
+  color: black;
 }
