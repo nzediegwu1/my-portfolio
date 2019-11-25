@@ -3,8 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Portfolio Template</title>
-
+  <title>Anaeze Nsoffor</title>
   <!-- mobile responsive meta -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -27,8 +26,6 @@
 </head>
 
 <body>
-  
-
 <header class="navigation fixed-top">
   <nav class="navbar navbar-expand-lg navbar-dark">
     <a class="navbar-brand font-tertiary h3" href="index.html"><img class="logo-img" src="images/logo.png" alt="Myself"></a>
@@ -36,12 +33,8 @@
       aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-
     <div class="collapse navbar-collapse text-center" id="navigation">
       <ul class="navbar-nav ml-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Home</a>
-        </li>
         <li class="nav-item">
           <a class="nav-link" href="#about">About</a>
         </li>
@@ -55,13 +48,16 @@
           <a class="nav-link" href="#tools">Tools</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#architectures">Projects</a>
+          <a class="nav-link" href="#projects">Projects</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#architectures">Testimonials</a>
+          <a class="nav-link" href="#testimonials">Testimonials</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#architectures">Contact</a>
+          <a class="nav-link" href="#contact">Contact</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" target="_blank" href="https://drive.google.com/open?id=1SaMLT8GhbUO3-DW9_wCswJFZ-dr1OxBG">Résumé</a>
         </li>
       </ul>
     </div>
@@ -73,6 +69,7 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-11 mx-auto">
+        <p class="about" id="about"></p>
         <h3 class="text-white font-tertiary">Hi! I’m <br>Anaeze Nsoffor</h3>
         <h1 class="text-white font-tertiary">Fullstack Engineer</h1>
       </div>
@@ -118,7 +115,7 @@
 <!-- /hero area -->
 
 <!-- about -->
-<section id="about" class="section about">
+<section class="section about">
   <div class="container">
     <div class="row">
       <div class="col-lg-8 col-sm-6 mx-auto text-center">
@@ -140,7 +137,7 @@
 
 
 <!-- experience -->
-<section class="section">
+<section id="experience" class="section">
   <div class="container">
     <div class="row justify-content-around">
       <div class="col-lg-12 text-center">
@@ -169,8 +166,8 @@
 </section>
 <!-- ./experience -->
 
-<!-- skills -->
-<section class="section">
+<!-- stack -->
+<section id="stack" class="section">
     <div class="container">
       <div class="row">
         <div class="col-lg-12 text-center">
@@ -211,7 +208,7 @@
   </section>
 
 <!-- Tools -->
-<section class="section position-relative">
+<section id="tools" class="section position-relative">
   <div class="container">
     <div class="row">
       <div class="col-lg-12 text-center">
@@ -557,23 +554,38 @@
       </div>
       <div class="col-lg-3 col-md-4 text-center hover-shadow pt-3">
         <div class="">
-          <img src="images/icons/plan.png" class="mb-4" alt="icon">
+          <img src="images/icons/git-workflow.png" class="mb-4" alt="icon">
           <h4 class="mb-4">Git Workflow</h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua.</p>
+          <ul class="list-group">
+              <li class="list-group-item">Detailed commit messages</li>
+              <li class="list-group-item">Concise branch naming using tokens</li>
+              <li class="list-group-item">Standardized PR conventions</li>
+              <li class="list-group-item">One squashed commit per PR</li>
+              <li class="list-group-item">PR Code Reviews</li>
+          </ul>
         </div>
       </div>
       <div class="col-lg-3 col-md-4 text-center hover-shadow pt-3">
-        <img src="images/icons/design.png" class="mb-4" alt="icon">
+        <img src="images/icons/agile.jpg" class="mb-4 agile-logo" alt="icon">
         <h4 class="mb-4">Agile Method</h4>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-          dolore magna aliqua.</p>
+        <ul class="list-group">
+            <li class="list-group-item">Scrum</li>
+            <li class="list-group-item">Sprint Planning</li>
+            <li class="list-group-item">Daily Standups</li>
+            <li class="list-group-item">Pivotal tracker, Jira, Trello</li>
+            <li class="list-group-item">Asking for Feedback->Feedback loop</li>
+        </ul>
       </div>
       <div class="col-lg-3 col-md-4 text-center hover-shadow pt-3">
-        <img src="images/icons/print.png" class="mb-4" alt="icon">
+        <img src="images/icons/cicd.jpg" class="mb-4 work-image" alt="icon">
         <h4 class="mb-4">CI/CD</h4>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-          dolore magna aliqua.</p>
+        <ul class="list-group">
+            <li class="list-group-item">Unit test</li>
+            <li class="list-group-item">Integrated test</li>
+            <li class="list-group-item">End to End test</li>
+            <li class="list-group-item">Code climate, Coveralls</li>
+            <li class="list-group-item">Automated deployment using CircleCI</li>
+        </ul>
       </div>
     </div>
   </div>
@@ -582,7 +594,7 @@
 
 
 <!-- portfolio -->
-<section class="section">
+<section id="projects" class="section">
   <div class="container">
     <div class="row">
       <div class="col-12 text-center">
@@ -682,7 +694,7 @@
       </div>
       <div class="col-lg-4 col-12 mb-5 hover-shadow p-5 shuffle-item portfolio">
         <h4 class="font-secondary"><b>ATM Machine</b></h4>
-        <p class="font-secondary">A basic ATM machine application that runs on the terminal</p>
+        <p class="font-secondary">A basic ATM machine application which runs on the terminal</p>
         <h6 class="mb-4"><i class="ti ti-angle-double-right"></i>Python, Open-Close principle, Dependency Inversion</h6>
         <div class="position-relative rounded hover-wrapper">
           <a class="btn btn-dark btn-sm" href="https://github.com/nzediegwu1/atm-machine" target="_blank" rel="noopener">
@@ -696,7 +708,7 @@
 <!-- /portfolio -->
 
 <!-- testimonial -->
-<section class="section bg-primary position-relative testimonial-bg-shapes">
+<section id="testimonials" class="section bg-primary position-relative testimonial-bg-shapes">
   <div class="container">
     <div class="row">
       <div class="col-12 text-center">
@@ -753,7 +765,7 @@
 
 
 <!-- contact -->
-<section class="section section-on-footer" data-background="images/backgrounds/bg-dots.png">
+<section id="contact" class="section section-on-footer" data-background="images/backgrounds/bg-dots.png">
   <div class="container">
     <div class="row">
       <div class="col-12 text-center">
@@ -762,19 +774,19 @@
       <div class="col-lg-8 mx-auto">
         <div class="bg-white rounded text-center p-5 shadow-down">
           <h4 class="mb-80">Contact Form</h4>
-          <form action="#" class="row">
+          <form action="https://formspree.io/meqojkrv" class="row">
             <div class="col-md-6">
               <input type="text" id="name" name="name" placeholder="Full Name" class="form-control px-0 mb-4">
             </div>
             <div class="col-md-6">
-              <input type="email" id="email" name="email" placeholder="Email Address" class="form-control px-0 mb-4">
+              <input type="email" id="email" name="_replyto" placeholder="Email Address" class="form-control px-0 mb-4">
             </div>
             <div class="col-12">
               <textarea name="message" id="message" class="form-control px-0 mb-4"
                 placeholder="Type Message Here"></textarea>
             </div>
             <div class="col-lg-6 col-10 mx-auto">
-              <button class="btn btn-primary w-100">send</button>
+              <button  type="submit" class="btn btn-primary w-100">Send 🚀</button>
             </div>
           </form>
         </div>
@@ -799,7 +811,7 @@
         </div>
         <div class="col-md-4">
           <h5 class="text-light">Address</h5>
-          <p class="text-white paragraph-lg font-secondary">127.0.0.1</p>
+          <p class="text-white paragraph-lg font-secondary">localhost:5432</p>
         </div>
       </div>
     </div>
