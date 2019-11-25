@@ -777,13 +777,13 @@
           <h4 class="mb-80">Contact Form</h4>
           <form method="POST" action="https://formspree.io/meqojkrv" class="row">
             <div class="col-md-6">
-              <input type="text" id="name" name="name" placeholder="Full Name" class="form-control px-0 mb-4">
+              <input type="text" required id="name" name="name" placeholder="Full Name" class="form-control px-0 mb-4">
             </div>
             <div class="col-md-6">
-              <input type="email" id="email" name="_replyto" placeholder="Email Address" class="form-control px-0 mb-4">
+              <input type="email" required id="email" name="_replyto" placeholder="Email Address" class="form-control px-0 mb-4">
             </div>
             <div class="col-12">
-              <textarea name="message" id="message" class="form-control px-0 mb-4"
+              <textarea required minlength="10" name="message" id="message" class="form-control px-0 mb-4"
                 placeholder="Type Message Here"></textarea>
             </div>
             <div class="col-lg-6 col-10 mx-auto">
