@@ -1038,3 +1038,6 @@ img.company-logo {
 .agile-logo {
   height: 8em;
 }
+html {
+  scroll-behavior: smooth;
+}
